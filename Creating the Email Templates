@@ -1,1 +1,64 @@
+Create Microsoft 365 Email Template in GoPhish
+✅ Step 1: Open GoPhish Admin Panel
+Launch GoPhish (usually via ./gophish in terminal).
 
+Visit: https://127.0.0.1:3333
+
+Login with your admin credentials.
+
+✅ Step 2: Go to "Email Templates"
+From the left sidebar, click on “Email Templates”.
+
+Click the green “+ New Template” button.
+
+✅ Step 3: Fill Template Details
+Template Name: Microsoft 365 Security Alert
+
+From: Microsoft Account Team <alerts@microsoft365-support.com> (can be spoofed)
+
+Subject: ❗ Unusual Sign-In Activity Detected in Your Microsoft 365 Account
+
+✅ Step 4: Add HTML Content
+Click the “HTML” tab.
+
+Paste the HTML code provided earlier (Microsoft email clone):
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Security Alert</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;">
+  <table width="100%" style="max-width: 600px; margin: auto; background-color: #ffffff; border: 1px solid #ccc; padding: 20px;">
+    <tr>
+      <td>
+        <h2 style="color: #2d2d2d;">Microsoft Account Security Alert</h2>
+        <p>Hello {{.FirstName}},</p>
+        <p>We noticed a suspicious sign-in attempt to your Microsoft 365 account:</p>
+        <ul>
+          <li><strong>Date:</strong> {{.Date}}</li>
+          <li><strong>Location:</strong> Unknown</li>
+          <li><strong>Device:</strong> Windows (Desktop)</li>
+        </ul>
+        <p>If this was you, no action is needed. If not, we recommend reviewing your account activity immediately to secure your account.</p>
+        <p style="text-align: center;">
+          <a href="{{.URL}}" style="display: inline-block; padding: 10px 20px; background-color: #0078d4; color: #fff; text-decoration: none; border-radius: 5px;">
+            Review Activity
+          </a>
+        </p>
+        <p>Thanks,<br>Microsoft Account Team</p>
+        <img src="{{.TrackingURL}}" width="1" height="1" alt="." />
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+✅ Step 5: Add Tracker
+Ensure {{.TrackingURL}} is in your HTML (<img src="{{.TrackingURL}}" width="1" height="1" />).
+
+This tracks email opens.
+
+✅ Step 6: Save the Template
+Click the green “Save Template” button.
