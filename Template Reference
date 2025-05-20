@@ -1,0 +1,14 @@
+Available Template & Landing Page Variables in GoPhish
+
+| Variable           |  Description                                                                    |
+|--------------------|---------------------------------------------------------------------------------|
+| `{{.RId}}`         | The target's unique ID (used for tracking responses)                            |
+| `{{.FirstName}}`   | The target's first name                                                         |
+| `{{.LastName}}`    | The target's last name                                                          |
+| `{{.Position}}`    | The target's position (job title)                                               |
+| `{{.Email}}`       | The target's email address                                                      |
+| `{{.From}}`        | The spoofed sender’s name or address                                            |
+| `{{.TrackingURL}}` | URL to the tracking handler (used to track opens/clicks)                        |
+| `{{.Tracker}}`     | An alias for `<img src="{{.TrackingURL}}"/>`, used for email open tracking      |
+| `{{.URL}}`         | The phishing URL that leads to the landing page                                 |
+| `{{.BaseURL}}`     | The base URL of the landing page (excluding the `rid` parameter)                |
