@@ -1,1 +1,34 @@
+Add a Group in GoPhish
+✅ Step 1: Go to “Users & Groups”
+Log in to GoPhish at:
+https://127.0.0.1:3333
 
+On the left-hand menu, click “Users & Groups”.
+
+Click the green “+ New Group” button.
+
+✅ Step 2: Enter Group Details
+Group Name:
+Enter something like:
+Test Users or Phishing Simulation Group
+
+✅ Step 3: Add Users to the Group
+You have two options:
+
+🔹 Option 1: Manually Add Users One by One
+Click “+ Add Recipient”.
+
+Enter the following fields:
+
+First Name
+
+Last Name
+
+Email
+
+Position (optional)
+
+Repeat for each user.
+
+✅ Step 4: Save the Group
+After adding users, click the green “Save Group” button.
