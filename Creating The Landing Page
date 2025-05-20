@@ -1,1 +1,10 @@
+How to Create a Microsoft 365 Landing Page in GoPhish
+✅ Step 1: Name Your Page
+Give your landing page a name like:
+Microsoft 365 Login Simulation 
+✅ Step 2: Import Microsoft 365 Login Page (Optional)
+You can click the red “Import Site” button and enter this URL to clone the login form:
+
+https://login.microsoftonline.com
+
 
