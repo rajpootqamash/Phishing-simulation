@@ -1,0 +1,63 @@
+Set Up Sending Profile in GoPhish
+✅ Step 1: Go to "Sending Profiles"
+Login to GoPhish Admin Panel:
+https://127.0.0.1:3333
+
+From the left menu, click "Sending Profiles".
+
+Click the green “+ New Profile” button.
+
+✅ Step 2: Fill in the Profile Details
+1: Name:
+Type something like:
+Gmail SMTP
+(This is just a label for you)
+
+2: From:
+Type:
+Microsoft Team <your_email@gmail.com>
+(This is what the recipient will see as the sender)
+
+3: Host:
+Type:
+smtp.gmail.com
+(This is Gmail’s SMTP server)
+
+4: Username:
+Type your full Gmail address:
+your_email@gmail.com
+
+5: Password:
+Paste your App Password (from Google):
+Example: abcd efgh ijkl mnop
+(Not your normal Gmail password)
+
+6: Ignore Cert Errors:
+Leave it unchecked.
+
+7: Interface Type:
+Keep the default: SMTP
+
+8: Use TLS:
+✅ Check this box (must be enabled for Gmail)
+
+9: Port:
+Type: 587
+(TLS port used by Gmail)
+
+✅ Step 3: Choose Encryption and Port
+Use TLS: ✅ (check this box)
+
+Port: 587
+
+Gmail requires TLS on port 587 for sending.
+
+✅ Step 4: Test Email Delivery (Optional)
+Click "Send Test Email" (enter your email to see if it works).
+
+If it fails:
+
+Check if "Less secure app access" is disabled — it must be enabled, OR use App Passwords (recommended).
+
+✅ Step 5: Save the Profile
+Click the green “Save Profile” button.
